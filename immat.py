@@ -2,7 +2,7 @@ import re
 
 #1/Immatriculation 
 immat = input('Quelle est votre immatriculation ? : ')
-prog = re.compile(r"^[A-Z]{2}([.-]?[0-9]{3})([.-]?[A-Z]{2})$")
+prog = re.compile(r"^[A-Z]{2}-\d{3})-[A-Z]{2}$")
 
 while True :
      if prog.search(immat) is not None :
