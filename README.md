@@ -11,3 +11,5 @@ S'entraîner aux expressions régulières.
     Ecrire un script pour vérifier qu'une chaîne saisie est bien celle d’une adresse IPv4 
    
   - Ecrire un script qui vérifie que la chaîne saisie par un User est bien celle d’un email, sinon lui demander de resaisir à     nouveau (jusqu'à obtenir un email valide).
+  
+  - Ecrire 1script qui vérifie que la chaîne saisie par un User est bien celle d’un email, sinon lui demander de resaisir à       nouveau (jusqu'à obtenir un email valide).
