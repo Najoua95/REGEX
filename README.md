@@ -16,3 +16,5 @@ Un email est composé de caractères alphanumériques suivis de @ et d’un nom 
   - Ecrire 1script qui vérifie que la chaîne saisie par un User est bien celle d’un email, sinon lui demander de resaisir à       nouveau (jusqu'à obtenir un email valide).
   
   - Augmenter le script pour taper le mot de passe (mdp, évidemment si l'email est valide où la seule spécifité du mdp est de     contenir au moins 4caractères) 
+  
+  - Le mot de passe doit maintenant contenir au moins 6 caractères : au moins une lettre en miniscule ET au moins une lettre       en majuscule Et au moins un chiffre Et au moins un charactére spécial (parmi $#@)
