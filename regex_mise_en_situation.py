@@ -64,4 +64,39 @@ def correct_mail():
 correct_mail()
 
 ##################
+#Augmenter le script pour taper le mot de passe (mdp, évidemment si l'email est valide où la seule spécifité du mdp est de contenir au moins 4caractères) 
+def correct_mail():
+    email = input("Insérez une adresse mail valide : ")
+    prog = re.compile(r"^[a-zA-Z0-9-._]+@{1}[a-zA-Z0-9]+\.[a-z]{2,4}$")
+    mdp = re.compile(r"^[a-zA-Z0-9]{4,}$")
+    
+    while True : 
+        if prog.search(email) is not None :
+            print('E-mail valide !')
+            mot_de_passe = input("Votre mot de passe ? ")
+            if mdp.search(mot_de_passe) is not None : 
+                print('mot de passe valide')
+            return email
+        else :
+            email = input ("Insérez une adresse mail valide: ")
+ correct_mail()
+
+####################
+#Le mot de passe doit maintenant contenir au moins 6 caractères : au moins une lettre en miniscule ET au moins une lettre en majuscule Et au moins un chiffre Et au moins un charactére spécial (parmi $#@)
+
+def correct_mail():
+    email = input("Insérez une adresse mail valide : ")
+    prog = re.compile(r"^[a-zA-Z0-9-._]+@{1}[a-zA-Z0-9]+\.[a-z]{2,4}$")
+    mdp = re.compile(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\$#@]).{6,}$") #on doit utiliser '?=' : positive lookahead
+    
+    while True : 
+        if prog.search(email) is not None :
+            print('E-mail valide !')
+            mot_de_passe = input("Votre mot de passe ? ")
+            if mdp.search(mot_de_passe) is not None : 
+                print('mot de passe valide')
+                return email
+        else :
+            email = input ("Insérez une adresse mail valide: ")
+correct_mail()
 
