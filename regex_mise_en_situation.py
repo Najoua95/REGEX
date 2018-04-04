@@ -1,5 +1,6 @@
 import re
 
+
 immat = input('Quelle est votre immatriculation ? : ')
 prog = re.compile(r"^[A-Z]{2}([.-]?[0-9]{3})([.-]?[A-Z]{2})$")
 
@@ -10,10 +11,13 @@ while True :
      else :
          immat = input ("Saisissez une immatriculation (valide) : ")
 
-
+     
+################
 adresse = input('Quelle est votre adresse IPv4 ? : ')
+prog = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
+
 while True :
-    if (re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", adresse)) :
+    if prog.search(adresse) is not None :
         essai = adresse.split(".")
         counter = 0
         for values in essai :
@@ -24,8 +28,9 @@ while True :
             print("Votre adresse IPv4 est valide !")
             break
         else :
-            adresse = input('Adresse IPv4 incorrecte ! (Tapez une IPv4 valide): ')
-
+            adresse = input("Adresse IPv4 est hors range! (Tapez une IPv4 valide): ")
+    else : 
+        adresse = input("Format de l'adresse IPv4 incorrecte ! (Tapez une IPv4 valide): ")
 
 
 
