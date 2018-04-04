@@ -14,7 +14,7 @@ while True :
      
 ################
 adresse = input('Quelle est votre adresse IPv4 ? : ')
-prog = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
+prog = re.compile(r"^(\d{1,3}\.){3}\d{1,3}$") ### ou prog = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
 
 while True :
     if prog.search(adresse) is not None :
