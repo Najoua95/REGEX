@@ -1,7 +1,7 @@
 # regex
 S'entraîner aux expressions régulières.
 
-1/ Rappels  de base 
+1/ Regex : expressions régulières utiles 
 
 2/ Mises en situation 
   - Une plaque d’immatriculation est composée de 2 lettres majuscules, un tiret ('-'), 3 chiffres, un tiret ('-') et enfin de     2 lettres majuscules. 
