@@ -40,8 +40,11 @@ def correct_mail():
     while True : 
         if prog.search(email) is not None :
             print('E-mail valide !')
-            break
+            return email
         else :
             email = input ("Insérez une adresse mail valide: ")
-correct_mail()
+ correct_mail()
+
+###################
+
 
