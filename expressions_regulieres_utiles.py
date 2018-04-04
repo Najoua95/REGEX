@@ -163,8 +163,8 @@ while True :
 ############################################### RECAPITULATIF #############################################
 
 #cas 1 : entier positif sans limite = ^\d+$
-#cas 2 : entier positif limite de 10 chiffres = ^(\d{1,10})$
-#cas 3 : entier positif à 5 chiffres = ^(\d{5})$
+#cas 2 : entier positif limite de 10 chiffres = ^\d{1,10}$
+#cas 3 : entier positif à 5 chiffres = ^\d{5}$
 #cas 4 : entier relatif sans limite = ^\-\d+$
 #cas 5 : entier relatif limite de 10 chiffres = ^\-(\d{1,10})$
 #cas 6 : entier relatif à 5 chiffres = ^\-(\d{5})$
