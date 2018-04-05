@@ -32,6 +32,13 @@ while True :
     else : 
         adresse = input("Format de l'adresse IPv4 incorrecte ! (Tapez une IPv4 valide): ")
 
+#autre méthode, tout en regex :
+adresse = input('Entrez votre adresse IPv4 ? : ')
+if re.match(r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$", adresse) :
+    print("Okay !")
+else : 
+    print ("KO !")
+
 ###################
 #Ecrire un script qui vérifie que la chaîne saisie par un User est bien celle d’un email, sinon lui demander de resaisir à nouveau (jusqu'à obtenir un email valide) ?
 def correct_mail():
